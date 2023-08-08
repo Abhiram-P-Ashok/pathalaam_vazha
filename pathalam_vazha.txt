@@ -1,0 +1,76 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Background animation</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet">
+</head>
+
+<body>
+  <div class="text-container">
+    <h1>PATHALAM JUDE</h1>
+  </div>
+  <div>
+    <img src="">
+  </div>
+</body>
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  background-color: #000;
+}
+
+.text-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container h1{
+  margin: 0;
+  font-size: 150px;
+  color: rgba(225,225,225, .01);
+  background-image: url("https://images.pexels.com/photos/2168838/pexels-photo-2168838.jpeg?auto=compress&cs=tinysrgb&w=400");
+  background-repeat: repeat;
+  -webkit-background-clip:text;
+  animation: animate 15s ease-in-out infinite;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+  @keyframes animate {
+    0%, 100% {
+      background-position: left top;
+    }
+    25%{
+      background-position: right bottom;
+     }
+    50% {
+      background-position: left bottom;
+    }
+    75% {
+      background-position: right top;
+    }   
+}
+
+/*.ജൂഡ് {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 75%;
+  width: 50%;
+}
+
+.ജൂഡ്:hover {
+  transform: scaleX(-1);
+}*/
+
+
+
